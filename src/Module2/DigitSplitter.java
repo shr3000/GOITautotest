@@ -1,4 +1,4 @@
-package Modul2;
+package Module2;
 
 /*
 Напиши класс с именем DigitSplitter. У класса должны быть следующие методы:

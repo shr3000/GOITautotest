@@ -1,4 +1,4 @@
-package Modul2;
+package Module2;
 
 /*
 Напиши класс MarsValueConverter в котором есть следующие методы:

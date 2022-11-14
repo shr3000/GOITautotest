@@ -1,4 +1,4 @@
-package Modul2;
+package Module2;
 /*
 Напиши класс MoonRobotVespenGasDetector. У этого класса должны быть следующие методы:
 

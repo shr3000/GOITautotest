@@ -1,4 +1,4 @@
-package Modul2;
+package Module2;
 
 public @interface GitCommand {
     /*
@@ -18,7 +18,8 @@ public @interface GitCommand {
 
 Чтобы глянуть  список удаленных репозиториев - пишем git remote --v
 
-Чтобы залить код на удаленный репозиторий - пишем git push origin master
+Чтобы залить код на удаленный репозиторий - пишем git push origin <master>
+master - название ветки в которой работаеш
 
 Чтобы подтянуть код с удаленного репозитория - пишем git pull origin master
 
@@ -28,8 +29,5 @@ git branch - показывает, на какой вы сейчас ветки
 git checkout -b <branch_name> - создает новую ветку с именем <branch_name> и переключается на эту ветку
 git checkout <branch_name> - переключается на существующую ветку с именем <branch_name>
 
-This is text made in branch A
-
-This text in branch B
      */
 }

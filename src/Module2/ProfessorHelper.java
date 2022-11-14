@@ -1,4 +1,4 @@
-package Modul2;
+package Module2;
 
 class ProfessorHelper {
     public boolean areNumbersCool(int number1, int number2) {
