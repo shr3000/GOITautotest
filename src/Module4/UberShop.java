@@ -35,6 +35,28 @@ toRemove, и возвращает новый массив без указанн�
 вызов removePrice(new int[] {150, 100, 200}, 100) возвращает [150, 200]
 вызов removePrice(new int[] {100, 100, 100}) возвращает []
 использовать можно только цикл for
+
+Напиши метод public int[] leavePrice9(int[] prices), который возвратит массив из тех цен, которые оканчиваются на цифру
+9. Не изменяй порядок оставшихся цен.
+вызов leavePrice9(new int[] {1, 99, 5, 49}) возвращает [99, 49]
+вызов leavePrice9(new int[] {}) возвращает []
+использовать можно только цикл for
+
+Напиши метод public String[] mergeStocks(String[] showcaseStocks, String[] warehouseStocks). Он принимает два массива
+товаров, каждый товар - строка. Возвращается массив, который состоит вначале из товаров в массиве showcaseStocks, а
+потом из товаров в массиве warehouseStocks. Порядок товаров не изменяй.
+ПРИМЕРЫ ТЕСТОВ
+вызов mergeStocks(new String[] {"gun", "bow"}, new String[] {"firegun"}) возвращает ["gun", "bow", "firegun"]
+вызов mergeStocks(new String[] {}, new String[] {}) возвращает []
+использовать можно только цикл for
+
+Напиши метод public int getPricesSum(int[] prices, int minPrice, int maxPrice). Он принимает список цен, и суммирует их,
+включая лишь те, которые больше чем minPrice (включительно) и меньше чем maxPrice (включительно)и возвращает сумму.
+вызов getPricesSum(new int[] {10, 700, 50, 500}, 10, 50) возвращает 60
+вызов getPricesSum(new int[] {500, 400, 200}, 10, 50) возвращает 0
+использовать можно только цикл for
+
+
  */
 
 import java.util.Arrays;
@@ -84,7 +106,7 @@ public class UberShop {
         if (prices.length == 0) return new int[0];
         int count = 0;
         for (int element: prices) {
-            if (element == toRemove)
+            if (element != toRemove)
                 count++;
         }
         int[] arr = new int[count];
@@ -96,6 +118,44 @@ public class UberShop {
             }
         }
         return arr;
+    }
+
+    public int[] leavePrice9(int[] prices) {
+        if (prices.length == 0) return new int[0];
+        int count = 0;
+        for (int element: prices) {
+            if (element %10 == 9)
+                count++;
+        }
+        int[] leavePrice9 = new int[count];
+        count = 0;
+        for (int element: prices) {
+            if (element % 10 == 9) {
+                leavePrice9[count] = element;
+                count++;
+            }
+        }
+        return leavePrice9;
+    }
+
+    public String[] mergeStocks(String[] showcaseStocks, String[] warehouseStocks) {
+        if (showcaseStocks.length == 0 && warehouseStocks.length == 0) return new String[0];
+        String[] allStocks = new String[showcaseStocks.length + warehouseStocks.length];
+        for (int i = 0; i < showcaseStocks.length; i++) {
+            allStocks[i] = showcaseStocks[i];
+        }
+        for (int i = showcaseStocks.length; i < allStocks.length; i++) {
+            allStocks[i] = warehouseStocks[i-showcaseStocks.length];
+        }
+        return allStocks;
+    }
+
+    public int getPricesSum(int[] prices, int minPrice, int maxPrice) {
+        int sum = 0;
+        for (int pr: prices) {
+            if (pr >= minPrice && pr <= maxPrice) sum += pr;
+        }
+        return sum;
     }
 
     //Test output
@@ -112,8 +172,12 @@ public class UberShop {
 //        System.out.println(Arrays.toString(prices2));
 
         //Should be [150, 200]
-        int[] prices = new int[]{150, 100, 200};
-        int toRemove = 100;
-        System.out.println(Arrays.toString(shop.removePrice(prices, toRemove)));
+        int[] prices = new int[]{150, 100, 209, 9};
+
+        System.out.println(Arrays.toString(shop.leavePrice9(prices)));
+
+        String[] showcaseStocks = new String[] {"gun", "firebow", "blabla" };
+        String[] warehouseStocks = new String[] {"firegun"};
+        System.out.println(Arrays.toString(shop.mergeStocks(showcaseStocks, warehouseStocks)));
     }
 }
