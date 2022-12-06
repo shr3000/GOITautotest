@@ -7,7 +7,14 @@ package Module5;
 
 Переопредели в классе Point метод equals(), чтобы вызов equals() для объектов класса Point с одинаковыми координатами
 возвращал true, и false, если координаты отличаются. Обязательно допиши аннотацию @Override.
+
+Напиши класс StarTrack. Объяви у этого класса два приватных поля типа Point с именами start и finish. Напиши сеттеры и
+геттеры для этих полей.
+Реализуй методы equals() и hashCode() для класса StarTrack. Два объекта StarTrack считаются равны, если у них равны
+точки start и finish.
  */
+
+import java.util.Objects;
 
 class Point {
     private int x;
@@ -80,4 +87,39 @@ class PointTest {
         System.out.println(p1.hashCode() == p2.hashCode()); //Should be true
         System.out.println(p1.hashCode() == p3.hashCode()); //Can be true or false
     }
+
+class StarTrack extends Point{
+    private Point start;
+    private Point finish;
+
+    public Point getStart() {
+        return start;
+    }
+
+    public void setStart(Point start) {
+        this.start = start;
+    }
+
+    public Point getFinish() {
+        return finish;
+    }
+
+    public void setFinish(Point finish) {
+        this.finish = finish;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        StarTrack starTrack = (StarTrack) o;
+        return Objects.equals(start, starTrack.start) && Objects.equals(finish, starTrack.finish);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), start, finish);
+    }
+}
 }
