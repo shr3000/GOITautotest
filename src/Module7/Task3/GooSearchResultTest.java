@@ -13,6 +13,8 @@ url типа String - URL страницы с искомой информаци�
 вызов new GooSearchResult("http://apple.in.mars").parseDomain() возвращает apple.in.mars.
  */
 
+import java.nio.charset.StandardCharsets;
+
 class GooSearchResultTest {
     public static void main(String[] args) {
         //test.com
@@ -20,5 +22,6 @@ class GooSearchResultTest {
 
         //apple.in.mars
         System.out.println(new GooSearchResult("http://apple.in.mars").parseDomain());
+
     }
 }
