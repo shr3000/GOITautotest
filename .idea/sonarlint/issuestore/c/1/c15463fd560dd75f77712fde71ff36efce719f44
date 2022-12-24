@@ -1,0 +1,13 @@
+
+7
+java:S1643"Use a StringBuilder instead.(¡œ˜¨şÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼Ÿå»
+\
+java:S1854"ARemove this useless assignment to local variable "stringBuilder".(€È¿¾øÿÿÿÿ
+A
+java:S1481"&Remove this unused "s" local variable.(®şîìøÿÿÿÿ
+M
+java:S1481"2Remove this unused "stringBuilder" local variable.(€È¿¾øÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(«‚«
+T
+java:S1128"9Remove this unused import 'java.awt.image.BufferedImage'.(×íĞ‡şÿÿÿÿ

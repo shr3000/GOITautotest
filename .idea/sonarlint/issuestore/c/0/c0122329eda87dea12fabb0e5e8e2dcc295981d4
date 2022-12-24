@@ -1,0 +1,7 @@
+
+2
+java:S1643"Use a StringBuilder instead.(ÉÍ’Ç
+Y
+java:S4973"<Strings and Boxed types should be compared using "equals()".(ÉÍ’Ç8›¼óûÓ0
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÆÊŠ¥şÿÿÿÿ
+V	java:S125	"<This block of commented-out lines of code should be removed.(Ò‚Úùÿÿÿÿ
