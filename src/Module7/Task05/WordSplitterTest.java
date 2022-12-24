@@ -1,4 +1,4 @@
-package Module7.Task5;
+package Module7.Task05;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package Module7.Task3;
+package Module7.Task03;
 
 /*
 Напиши класс GooSearchResult.
@@ -12,8 +12,6 @@ url типа String - URL страницы с искомой информаци�
 вызов new GooSearchResult("https://test.com").parseDomain() возвращает test.com;
 вызов new GooSearchResult("http://apple.in.mars").parseDomain() возвращает apple.in.mars.
  */
-
-import java.nio.charset.StandardCharsets;
 
 class GooSearchResultTest {
     public static void main(String[] args) {

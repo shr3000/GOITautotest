@@ -1,4 +1,4 @@
-package Module7.Task4;
+package Module7.Task04;
 
 /*
 Напиши класс Phrase.

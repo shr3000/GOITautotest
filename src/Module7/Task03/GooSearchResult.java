@@ -1,4 +1,4 @@
-package Module7.Task3;
+package Module7.Task03;
 
 public class GooSearchResult {
     private String url;

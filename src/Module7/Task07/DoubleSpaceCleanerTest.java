@@ -1,4 +1,4 @@
-package Module7.Task7;
+package Module7.Task07;
 class DoubleSpaceCleanerTest {
     public static void main(String[] args) {
         DoubleSpaceCleaner cleaner = new DoubleSpaceCleaner();

@@ -1,4 +1,4 @@
-package Module7.Task8;
+package Module7.Task08;
 
 /*
 Напиши класс WordFreqCounter. В этом классе опиши метод public float countFreq(String phrase, String word). Метод

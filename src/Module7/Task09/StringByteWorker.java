@@ -1,4 +1,4 @@
-package Module7.Task9;
+package Module7.Task09;
 
 /*
 Напиши класс StringByteWorker. В этом классе создай метод public String process(byte[] bytes). Метод принимает на вход

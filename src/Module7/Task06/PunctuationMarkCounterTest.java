@@ -1,4 +1,4 @@
-package Module7.Task6;
+package Module7.Task06;
 
 class PunctuationMarkCounterTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Module7.Task5;
+package Module7.Task05;
 
 /*
 Напиши класс WordSplitter. В этом классе создай метод public String[] split(String phrase). Метод принимает на вход строку,

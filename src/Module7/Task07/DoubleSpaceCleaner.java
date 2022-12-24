@@ -1,4 +1,4 @@
-package Module7.Task7;
+package Module7.Task07;
 
 /*
 Напиши класс DoubleSpaceCleaner. У этого класса создай метод public String clean(String phrase). Метод принимает на вход

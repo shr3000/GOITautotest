@@ -1,4 +1,4 @@
-package Module7.Task2;
+package Module7.Task02;
 
 /*
 Напиши класс GooWordStat.

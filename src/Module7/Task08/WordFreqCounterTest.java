@@ -1,4 +1,4 @@
-package Module7.Task8;
+package Module7.Task08;
 
 class WordFreqCounterTest {
     public static void main(String[] args) {

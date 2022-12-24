@@ -1,6 +1,4 @@
-package Module7.Task4;
-
-import java.util.Arrays;
+package Module7.Task04;
 
 class PhraseTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Module7.Task6;
+package Module7.Task06;
 
 /*
 Напиши класс PunctuationMarkCounter. В этом классе создай метод public int count(String phrase). Он принимает строку, и
