@@ -5,12 +5,6 @@ Y
 )src/Module7/Task12/UniqueCharCounter.java,2\7\27bc509c83b9ec75c41a6a88007d2fecba34cd81
 M
 src/Module7/Task12/Count.java,c\1\c15463fd560dd75f77712fde71ff36efce719f44
-W
-'src/Module7/Task9/StringByteWorker.java,e\7\e72f57b7b9cafdafb939be829917f23f5836a3c9
-V
-&src/Module7/Task8/WordFreqCounter.java,d\7\d764baa969592a4c87c73d2cf0d9900a0a539c49
-Y
-)src/Module7/Task7/DoubleSpaceCleaner.java,e\c\ec4863a9a5a374397a96f9c2a1b1a039c5d25295
 S
 #src/Module7/Task13/WordDeleter.java,c\0\c0122329eda87dea12fabb0e5e8e2dcc295981d4
 ]
@@ -39,3 +33,15 @@ V
 &src/Module7/Task19/DigitExtracter.java,9\4\9488e8c0013a60b5f1de921a8e66f648e625c2ec
 Z
 *src/Module7/Task19/DigitExtracterTest.java,e\a\eac29006a700778ccddf1b5b135031c32a0fa8fd
+V
+&src/Module7/Task20/BigOrSmallTest.java,0\9\09a68e67ef3f281e6b2d875fdcf35c9a7d87ec3e
+R
+"src/Module7/Task20/BigOrSmall.java,9\d\9dc3f76fbbc1877925ccd5f4fc4ec36af8b557ff
+S
+#src/Module7/Task21/WordCombine.java,d\9\d9ef097ca7763b0647bd536ce8d35c9e14aa6dca
+W
+'src/Module7/Task21/WordCombineTest.java,4\3\43ce939b9a2358f9ea661c5a56901d812fc1117b
+X
+(src/Module7/Task22/WaterCounterTest.java,1\5\15efc4935566f1fa03a4fc9b5c1563bc84204b4b
+T
+$src/Module7/Task22/WaterCounter.java,c\5\c56d9239632f72d5f82ef3b123e04e90dee01af7
